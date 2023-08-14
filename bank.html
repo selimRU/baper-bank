@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,10 @@
     <title>bank inside</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <h1 class="font-semibold text-5xl text-center mt-5 text-amber-600">Welcome to <span class="text-yellow-400">Sonali Bank</span></h1>
+    <h1 class="font-semibold text-5xl text-center mt-5 text-amber-600">Welcome to <span class="text-yellow-400">Sonali
+            Bank</span></h1>
     <section class="mt-5">
         <div class="grid grid-cols-3">
             <div class="bg-lime-500 w-8/12 mx-auto py-5 text-center rounded-lg">
@@ -27,17 +30,24 @@
     </section>
     <section class="mt-20">
         <div class="grid grid-cols-2">
-            <div class="mx-auto bg-yellow-500 text-center px-36 py-28 rounded-lg">
-                <h2 class="text-start text-white">Please Deposit</h2>
-                <input id="depo-amount" class="w-60" type="text" placeholder="$amount you want to deposite">
-                <br>
-                <button id="btn-deposit" class=" rounded-lg py-1 px-1 mr-44 bg-lime-500 hover:bg-white mt-5 text-white">Deposit</button>
+            <div class="mx-auto bg-yellow-500 px-36 py-28 space-y-5 rounded-lg">
+                <h2 class=" text-white">Please Deposit</h2>
+                <input id="depo-amount" class="w-60 py-1 px-2 outline-none rounded-sm" type="text"
+                    placeholder="$amount you want to deposite"><br>
+                <div>
+                    <button id="btn-deposit"
+                        class=" rounded-lg py-1 px-5 bg-lime-500 hover:bg-black text-white">Deposit</button>
+                </div>
             </div>
-            <div class="mx-auto bg-emerald-300 text-center px-36 py-28 rounded-lg">
+            <div class="mx-auto bg-emerald-300 px-36 space-y-5 py-28 rounded-lg">
                 <h2 class="text-start text-white">Please Withdraw</h2>
-                <input id="with-amount" class="w-60" type="text" placeholder="$amount you want to withdraw">
+                <input id="with-amount" class="w-60 py-1 px-2 outline-none rounded-sm" type="text"
+                    placeholder="$amount you want to withdraw">
                 <br>
-                <button id="btn-withdraw" class=" rounded-lg py-1 px-1 mr-44 bg-red-600 hover:bg-white mt-5 text-white">Withdraw</button>
+                <div>
+                    <button id="btn-withdraw"
+                        class=" rounded-lg py-1 px-5 bg-red-600 hover:bg-black  text-white">Withdraw</button>
+                </div>
             </div>
         </div>
     </section>
@@ -45,4 +55,5 @@
     <script src="js/deposit.js"></script>scr
     <script src="js/withdraw.js"></script>
 </body>
+
 </html>
