@@ -1,0 +1,10 @@
+.photo{
+    background-color: aqua;
+    border: 2px solid silver;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-bottom: 10px;
+    text-align: start;
+    
+}

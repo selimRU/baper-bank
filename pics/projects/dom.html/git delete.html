@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don explore</title>
+</head>
+<body>
+    <h1 id="secret">my secret</h1>
+    <input type="text" name="" id="field" placeholder="delete">
+    <button id="btn" disabled>delete</button>
+    <script>
+        document.getElementById('field').addEventListener('keyup',function(event){
+          const text = event.target.value;
+          delB = document.getElementById('btn');
+        if(text === 'delete') {
+            delB.removeAttribute('disabled');
+        }
+        else{
+            delB.setAttribute('disabled',true);
+        }
+        })
+        document.getElementById('btn').addEventListener('click',function(){
+         const sec = document.getElementById('secret');
+         sec.style.display ='none';
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+.base{
+    background-color: darkgrey;
+    width: 1000px;
+    height: 600px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    
+}
+.pin-container{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    width: 800px;
+    margin: auto;
+    
+}
+.calcu{
+     align-items: center;
+     background-color: honeydew;
+     margin-top: 100px;
+     border: 1px solid gainsboro;
+     width: 250px;
+     height: 300px;
+    display: grid;
+    grid-auto-rows: repeat(1);
+
+}
+.in-gen{
+    margin-left: 30px;
+
+}
+
+.gen-field{
+    border: 1px solid gainsboro;
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: repeat(1);
+    width: 250px;
+    height: 300px;
+    align-items: center;
+    background-color: honeydew;
+}
+
+.gen{
+     margin-left: 70px;
+     border: 1px solid blue;
+     width: 100px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     border-radius: 100px;
+     background-color: blue;
+     color: azure;
+}  
+.pin-fldc{
+    margin-top: 20px;
+} 
+.inp-fld{
+    margin-bottom: 60px;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+
+
+.num-1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+   
+}
+
+.border-btn{
+    border: 1px solid grey;
+    padding-left: 5px;
+    padding-right: 5px;   
+}
+.border-btn:hover{
+      background-color: darkgray;
+}
+.sub{
+    width: 200px;
+    margin-left: 25px;
+    background-color: blue;
+    color: azure;
+}
+.match{
+    margin-left: 450px;
+}
+.notify-pinn{
+    display: none;
+}
+
+.notify-pin{
+    display: none;
+}

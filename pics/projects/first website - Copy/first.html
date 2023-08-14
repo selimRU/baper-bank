@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="com-con">
+        <h1>Please comment</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dignissimos enim neque provident cupiditate perspiciatis unde, reiciendis, hic distinctio atque ipsa alias error sint voluptatum voluptate sed facilis quia at.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsum eum nemo nobis laudantium, explicabo et dolorum dolores, quae iure eos. Ab laboriosam atque consectetur, impedit tempore natus doloribus blanditiis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta expedita fugit deserunt eligendi earum, tempora laudantium ipsa quae quis assumenda, inventore harum qui nihil cumque? In inventore quidem quis! Et!</p>
+    </div>
+    <div>
+        <textarea name="" id="new-c" cols="30" rows="10"></textarea>
+        <br>
+        <button id="btn-post">post</button>
+    </div>  
+    <script>
+         document.getElementById('btn-post').addEventListener('mousemove',function(){
+           const cB =document.getElementById('new-c');
+           const newC = cB.value;
+           const cC = document.getElementById('com-con');
+           const p = document.createElement('p');
+           p.innerText = newC;
+           cC.appendChild(p);
+           cB.value='';
+         })
+    </script>
+</body>
+</html>
